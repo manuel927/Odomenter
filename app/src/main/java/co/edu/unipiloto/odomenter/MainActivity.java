@@ -77,8 +77,8 @@ public class MainActivity extends Activity {
                 if (bound && odometer != null){
                     distance = odometer.getDistance();
                 }
-                String distanceStr = String.format(Locale.getDefault(),"%1$,.2f miles",distance);
-
+               // String distanceStr = String.format(Locale.getDefault(),"%1$,.2f miles",distance);
+                String distanceStr = String.format(Locale.getDefault(),"%1$,.2f metros",distance);
                 distanceView.setText(distanceStr);
                 handler.postDelayed(this,1000);
             }
